@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true">
+    <Appenders>
+        <Console name="InfoAppender" target="SYSTEM_OUT">
+            <PatternLayout
+                    disableAnsi="false"
+                    pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} %highlight{%-5p}-- %style{%msg}{white}%n%n"
+            />
+        </Console>
+
+        <Console name="ErrorAppender" target="SYSTEM_ERR">
+            <PatternLayout
+                    disableAnsi="false"
+                    pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} %highlight{%-5p} [%t] %logger{36} -- [%highlight{%m}]%n"
+            />
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="TRACE">
+            <AppenderRef ref="InfoAppender" level="info"/>
+            <AppenderRef ref="ErrorAppender" level="error"/>
+        </Root>
+    </Loggers>
+</Configuration>

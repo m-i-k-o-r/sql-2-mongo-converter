@@ -220,7 +220,8 @@ public final class SQLCommandInfo implements Holder {
     /**
      * Creates a new {@link SQLCommandInfo} based on a PlainSelect statement.
      */
-    private SQLCommandInfo withPlainSelect(PlainSelect plainSelect) throws ParseException, QueryConversionException {
+    private SQLCommandInfo withPlainSelect(PlainSelect plainSelect)
+            throws ParseException, QueryConversionException {
 
         ValidationUtils.validateTrue(plainSelect != null, "The PlainSelect statement cannot be null.");
         ValidationUtils.validateTrue(plainSelect.getFromItem() != null, "The FROM item cannot be null.");
