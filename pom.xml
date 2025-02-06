@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.koroli</groupId>
-    <artifactId>queryconverter</artifactId>
-    <version>0.0.1-alpha-snapshot</version>
+    <artifactId>query-converter</artifactId>
+    <version>0.0.2-alpha-snapshot</version>
     <packaging>jar</packaging>
     <name>sql-2-mongo-converter</name>
     <description>Library for converting SQL queries to MongoDB queries</description>
@@ -50,11 +50,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j-api.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j2-impl</artifactId>
-            <version>${log4j.version}</version>
         </dependency>
 
         <!-- JSON -->
